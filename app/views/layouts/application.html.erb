@@ -12,18 +12,19 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class ="circle">
           <br />
           Welcome
           <br />
         </div>
-        
+        <% end %>
       </div>
       <div class ="col-4 slogan">
         The best news headlines around!
       </div>
       <div class="col-5 links">
-        <%= link_to 'Add a new story', '#' %>
+        <%= link_to 'Add a new story', new_headline_path %>
         <%= link_to 'About', '#' %>
       </div>
 

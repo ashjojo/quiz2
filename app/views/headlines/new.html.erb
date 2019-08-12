@@ -1,0 +1,7 @@
+<h1> Enter a new story </h1>
+<%= simple_form_for @headline do |f| %>
+	<%= f.input :story %>
+	<%= f.input :byline %>
+	<br />
+	<%= f.submit 'Create', class: 'btn btn-danger' %>
+	<% end %>
